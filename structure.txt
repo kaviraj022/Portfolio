@@ -1,0 +1,17 @@
+/portfolio-project
+    ├── index.html               # Home Page
+    ├── projects.html            # Projects Page
+    ├── certifications.html      # Certifications Page
+    ├── achievements.html        # Achievements Page
+    ├── skills.html              # Skills Page
+    ├── contact.html             # Contact Page
+    ├── styles/                  # CSS Folder
+    │   ├── main.css             # Global Styles
+    │   ├── contact.css          # Contact Page Specific Styles
+    │   ├── projects.css         # Projects Page Specific Styles
+    │   ├── certifications.css   # Certifications Page Specific Styles
+    │   ├── achievements.css     # Achievements Page Specific Styles
+    │   ├── skills.css           # Skills Page Specific Styles
+    ├── favicon.ico              # Favicon
+    └── images/                  # Folder for images (e.g., profile pictures)
+        └── profile.jpg          # Example profile picture (for Home and Contact)

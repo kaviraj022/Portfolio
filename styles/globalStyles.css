@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Font */
+html, body {
+    height: 100%; /* Ensure the body takes up full height */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Active Link Style */
+header nav ul li a.active {
+    color: #00bcd4; /* Highlight color for the active link */
+    font-weight: bold; /* Make the active link bold */
+}
+
+/* Hover Effect */
+header nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    /* Ensure footer stays at the bottom */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Container for content sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    flex-grow: 1; /* Allow container to grow and push footer down */
+}
+
+/* Section Headings */
+h1, h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #00bcd4;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}

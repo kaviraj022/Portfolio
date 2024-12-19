@@ -1,0 +1,46 @@
+/* Certifications Page */
+#certifications {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#certifications h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.certification-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certification-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.certification-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.certification-card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.certification-card a {
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+.certification-card a:hover {
+    color: #333;
+}

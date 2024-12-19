@@ -1,0 +1,172 @@
+/* Home Section Styles */
+#home {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Profile Image */
+#home .profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* About Content Styles */
+#about-content {
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 90%; /* Adjust the width to occupy more space */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify; /* Justify the content */
+}
+
+#about-content p {
+    margin-bottom: 15px;
+}
+
+#about-content a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+#about-content a:hover {
+    text-decoration: underline;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Font */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Active Link Style */
+header nav ul li a.active {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+header nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    margin-top: auto;
+}
+
+/* Container for content sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the sections vertically */
+    align-items: center;     /* Center the sections horizontally */
+    flex-grow: 1;
+}
+
+/* Section Headings */
+h1, h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #00bcd4;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}

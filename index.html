@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Home</title>    
+    <link rel="stylesheet" href="styles/indexStyles.css">  
+    <link rel="stylesheet" href="styles/globalStyles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div>
+            <!-- Profile Image -->
+            <img src="images/ironman.jpg" alt="Profile Image" class="profile-img"> 
+            <h1>Welcome to My Portfolio page</h1>
+            <p id="about-content"></p>        
+        </div>
+    </section>
+
+    <div class="navigations">
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <p>To view my achievements, click the link below:</p>
+                <a href="skills.html">View Achievements</a>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <div class="container">
+                <h2>Certifications</h2>
+                <p>To view my certifications, click the link below:</p>
+                <a href="certifications.html">View Certifications</a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <p>To explore my projects in more detail, click the link below:</p>
+                <a href="projects.html">View Projects</a>
+            </div>
+        </section>
+        
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <div class="container">
+                <h2>Achievements</h2>
+                <p>To view my achievements, click the link below:</p>
+                <a href="achievements.html">View Achievements</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>To get in touch, click the link below:</p>
+                <a href="contact.html">View Contact</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Kaviraj S. All rights reserved.</p>
+    </footer>
+
+    <script>
+        fetch('about.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Insert the content with HTML tags into the page
+                document.getElementById('about-content').innerHTML = data;  // Using innerHTML to render HTML tags
+            })
+            .catch(error => console.error('Error loading the text file:', error));
+    </script>
+    
+</body>
+</html>

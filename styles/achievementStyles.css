@@ -1,0 +1,36 @@
+/* Achievements Page */
+#achievements {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#achievements h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.achievement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.achievement-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.achievement-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.achievement-item p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
