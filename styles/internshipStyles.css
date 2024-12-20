@@ -1,4 +1,3 @@
-/* Internships Page Styles */
 #internships {
     background-color: #f4f4f4;
     padding: 50px 0;
@@ -75,7 +74,7 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive Design */
+/* Responsive design for mobile*/
 @media screen and (max-width: 768px) {
     .internship-group {
         width: 90%;

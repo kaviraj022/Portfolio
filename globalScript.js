@@ -2,7 +2,7 @@
 let moveToTopBtn = document.createElement("button");
 moveToTopBtn.id = "moveToTopBtn";
 moveToTopBtn.title = "Go to top";
-moveToTopBtn.innerHTML = "↑"; // Button text (upward arrow)
+moveToTopBtn.innerHTML = "↑"; // Button text 
 
 // Add the button to the body
 document.body.appendChild(moveToTopBtn);

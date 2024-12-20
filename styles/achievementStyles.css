@@ -1,4 +1,3 @@
-/* Achievements Page Styles */
 #achievements {
     background-color: #f4f4f4;
     padding: 50px 0;
@@ -24,12 +23,12 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
 }
 
 .achievement:hover {
     transform: translateY(-10px); /* Lift the section */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Add shadow effect */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Adding shadow effect */
 }
 
 .achievement h3 {
@@ -79,7 +78,7 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive Design */
+/* Responsive design for mobiles*/
 @media screen and (max-width: 768px) {
     .achievement-group {
         width: 90%;
