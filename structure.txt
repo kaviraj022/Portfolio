@@ -1,17 +1,21 @@
 /portfolio-project
     ├── index.html               # Home Page
-    ├── projects.html            # Projects Page
-    ├── certifications.html      # Certifications Page
-    ├── achievements.html        # Achievements Page
     ├── skills.html              # Skills Page
+    ├── certifications.html      # Certifications Page
+    ├── internships.html         # Internships Page
+    ├── projects.html            # Projects Page
+    ├── achievements.html        # Achievements Page
     ├── contact.html             # Contact Page
+    ├── globalScript.js          # Global JavaScript (for 'move to top' button)
+    ├── about.txt                # Content for about section
     ├── styles/                  # CSS Folder
-    │   ├── main.css             # Global Styles
-    │   ├── contact.css          # Contact Page Specific Styles
-    │   ├── projects.css         # Projects Page Specific Styles
-    │   ├── certifications.css   # Certifications Page Specific Styles
-    │   ├── achievements.css     # Achievements Page Specific Styles
+    │   ├── globalStyles.css     # Global Styles (for header, footer, etc.)
+    │   ├── indexStyles.css      # Home Page Specific Styles
     │   ├── skills.css           # Skills Page Specific Styles
-    ├── favicon.ico              # Favicon
+    │   ├── certifications.css   # Certifications Page Specific Styles
+    │   ├── internships.css      # Internships Page Specific Styles
+    │   ├── projectStyles.css    # Projects Page Specific Styles
+    │   ├── achievements.css     # Achievements Page Specific Styles
+    │   ├── contactStyles.css    # Contact Page Specific Styles
     └── images/                  # Folder for images (e.g., profile pictures)
-        └── profile.jpg          # Example profile picture (for Home and Contact)
+        └── profilePicture.jpg             

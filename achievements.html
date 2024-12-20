@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievements - Kaviraj S</title>
-    <link rel="stylesheet" href="styles/achievementStyles.css">  <!-- Achievements specific styles -->
+    <link rel="stylesheet" href="styles/achievementStyles.css"> <!-- Achievements specific styles -->
     <link rel="stylesheet" href="styles/globalStyles.css">
+    <script src="globalScript.js" defer></script> 
 </head>
 <body>
     <header>
@@ -14,6 +15,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="internships.html">Internships</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="achievements.html" class="active">Achievements</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -21,10 +23,28 @@
         </nav>
     </header>
 
-    <section>
-        <h2>My Achievements</h2>
-        <p>Here are my achievements:</p>
-        <!-- Add your achievements here -->
+    <section id="achievements">
+        <div class="container">
+            <h2>My Achievements</h2>
+
+            <div class="achievement-group">
+                <!-- Achievement 1 -->
+                <div class="achievement">
+                    <h3>Elite Java Certification</h3>
+                    <p><strong>Organization:</strong> NPTEL (IIT Kharagpur)</p>
+                    <p class="description">Achieved an elite certification by securing 66% in the NPTEL Java Programming course, showcasing expertise in object-oriented programming concepts and Java development.</p>
+                    <a class="view-certificate-btn" href="https://drive.google.com" target="_blank">View Certificate</a>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="achievement">
+                    <h3>National Coding Champion</h3>
+                    <p><strong>Organization:</strong> CodeChef</p>
+                    <p class="description">Won the national-level coding competition organized by CodeChef, excelling in problem-solving, algorithm design, and competitive programming.</p>
+                    <a class="view-certificate-btn" href="https://drive.google.com" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>

@@ -17,32 +17,36 @@
     color: #555;
 }
 
-.contact-list {
-    list-style-type: none;
-    padding: 0;
+/* Contact Buttons */
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-.contact-list li {
-    margin: 15px 0;
-}
-
-.contact-list li a {
-    font-size: 1.5em;
-    color: #333;
+.contact-btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
     text-decoration: none;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.contact-list li a:hover {
-    color: #00bcd4; /* Hover effect color */
+.contact-btn:hover {
+    background-color: #0288a3;
 }
 
-.contact-list li a i {
+.contact-btn i {
     margin-right: 10px;
-    font-size: 1.8em; /* Icon size */
+    font-size: 1.5em; /* Icon size */
 }
 
 /* Responsive Design */
@@ -51,7 +55,8 @@
         font-size: 1.8em;
     }
 
-    .contact-list li a {
-        font-size: 1.3em;
+    .contact-btn {
+        width: 200px;
+        font-size: 1.1em;
     }
 }

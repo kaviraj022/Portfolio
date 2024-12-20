@@ -27,9 +27,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px; /* Fixed height */
+    height: 300px; /* Fixed height */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden; /* Prevent overflow */
+}
+
+.skillInfo{
+    text-align: justify;
 }
 
 .skill-item:hover {
@@ -51,14 +55,33 @@
     overflow: hidden; /* Prevent text overflow */
     text-overflow: ellipsis; /* Optionally add an ellipsis if the text is too long */
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limit to 3 lines of text */
+    -webkit-line-clamp: 4; /* Limit to 3 lines of text */
     -webkit-box-orient: vertical;
 }
 
+/* Skill Level */
 .skill-level {
     font-size: 1.2em;
     font-weight: bold;
     color: #00bcd4;
+    margin-bottom: 10px; /* Adds space below skill level */
+}
+
+/* View Certificates Button */
+.view-cert-button {
+    background-color: #00bcd4; /* Same color as skill level */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.view-cert-button:hover {
+    background-color: #019ab3; /* Slightly darker shade on hover */
 }
 
 /* Responsive Design */

@@ -1,46 +1,112 @@
-/* Certifications Page */
+/* Certifications Page Styles */
 #certifications {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 50px 0;
 }
 
 #certifications h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
 }
 
-.certification-list {
+.certification-group {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.certification-card {
-    background-color: #f9f9f9;
+.organization {
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    margin: 20px;
-    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.organization:hover {
+    transform: translateY(-10px); /* Lift the section */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Add shadow effect */
+}
+
+.organization h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 15px;
     text-align: center;
 }
 
-.certification-card h3 {
-    font-size: 1.5em;
+.organization ul {
+    list-style: none;
+    padding-left: 0;
     margin-bottom: 15px;
 }
 
-.certification-card p {
-    font-size: 1.1em;
-    margin-bottom: 15px;
+.organization ul li {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
 }
 
-.certification-card a {
-    text-decoration: none;
-    color: #00bcd4;
-    font-weight: bold;
+/* Display serial number for each course */
+.organization ul li::before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: #555;
 }
 
-.certification-card a:hover {
-    color: #333;
+/* Counter reset for each list */
+.organization ul {
+    counter-reset: item;
+}
+
+.view-certificate-btn {
+    display: inline-block;
+    background-color: #00bcd4; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for button size */
+    font-size: 1em; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text within the button */
+    text-decoration: none; /* Remove underline from link */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    margin: 20px auto 0; /* Center horizontally with space above */
+    display: block; /* Ensure the button is block-level to use margin auto */
+    width: fit-content; /* Adjust width to fit content */
+}
+
+.view-certificate-btn:hover {
+    background-color: #0288a3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .certification-group {
+        width: 90%;
+    }
+
+    .organization {
+        padding: 15px;
+    }
+
+    .organization h3 {
+        font-size: 1.4em;
+    }
+
+    .organization ul li {
+        font-size: 1em;
+    }
+
+    .view-certificate-btn {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
 }

@@ -1,17 +1,17 @@
-/* Projects Page Styles */
-#projects {
+/* Internships Page Styles */
+#internships {
     background-color: #f4f4f4;
     padding: 50px 0;
 }
 
-#projects h2 {
+#internships h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2em;
     color: #333;
 }
 
-.project-group {
+.internship-group {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -19,7 +19,7 @@
     gap: 20px;
 }
 
-.project {
+.internship {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -27,22 +27,26 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project h3 {
+.internship h3 {
     font-size: 1.6em;
     color: #333;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.project p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: justify;
+.internship ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
 }
 
-.view-sample-btn {
+.internship ul li {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.view-details-btn {
     display: inline-block;
     background-color: #00bcd4;
     color: white;
@@ -60,7 +64,7 @@
     width: fit-content;
 }
 
-.view-sample-btn:hover {
+.view-details-btn:hover {
     background-color: #0288a3;
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -68,23 +72,23 @@
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .project-group {
+    .internship-group {
         width: 90%;
     }
 
-    .project {
+    .internship {
         padding: 15px;
     }
 
-    .project h3 {
+    .internship h3 {
         font-size: 1.4em;
     }
 
-    .project p {
+    .internship ul li {
         font-size: 1em;
     }
 
-    .view-sample-btn {
+    .view-details-btn {
         font-size: 0.9em;
         padding: 8px 15px;
     }

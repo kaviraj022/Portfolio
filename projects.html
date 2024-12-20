@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Kaviraj S</title>
-    <link rel="stylesheet" href="styles/projectStyles.css">  <!-- Projects specific styles -->
+    <link rel="stylesheet" href="styles/projectStyles.css"> <!-- Projects specific styles -->
     <link rel="stylesheet" href="styles/globalStyles.css">
+    <script src="globalScript.js" defer></script> 
 </head>
 <body>
     <header>
@@ -14,6 +15,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="internships.html">Internships</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -21,10 +23,32 @@
         </nav>
     </header>
 
-    <section>
-        <h2>My Projects</h2>
-        <p>Here are the details about my projects:</p>
-        <!-- Add your projects here -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+
+            <div class="project-group">
+                <!-- Project 1 -->
+                <div class="project">
+                    <h3>Vehicle Density Control System</h3>
+                    <p>
+                        Designed an intelligent traffic system that uses YOLOv8 for vehicle detection and density estimation. 
+                        The system dynamically adjusts traffic signal timings based on real-time image data to reduce congestion.
+                    </p>
+                    <a class="view-sample-btn" href="https://github.com" target="_blank">View Sample Outputs</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <h3>Air Quality Monitoring System</h3>
+                    <p>
+                        Developed a hardware solution to monitor air quality using NOVA PM sensors, DTH11, and ESP32. 
+                        The system provides real-time data visualization and generates alerts for hazardous pollution levels.
+                    </p>
+                    <a class="view-sample-btn" href="https://github.com" target="_blank">View Sample Outputs</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
