@@ -82,6 +82,8 @@
 
 .view-cert-button:hover {
     background-color: #019ab3; /* Slightly darker shade on hover */
+    transform: translateY(-5px); /* Lift the section */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Add shadow effect */
 }
 
 /* Responsive Design */

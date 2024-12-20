@@ -42,6 +42,8 @@
 
 .contact-btn:hover {
     background-color: #0288a3;
+    transform: translateY(-5px); /* Lift the section */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Add shadow effect */
 }
 
 .contact-btn i {
