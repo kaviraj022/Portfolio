@@ -1,3 +1,4 @@
+/* Contact Page Styles */
 #contact {
     background-color: #fff;
     padding: 50px 0;
@@ -30,33 +31,39 @@
     font-size: 1.2em;
     text-decoration: none;
     border-radius: 5px;
-    width: 250px;
-    text-align: center;
+    text-align: left;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     transition: background-color 0.3s ease;
+    padding-left: 20px; /* Add some left padding for better alignment */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+    width: auto; /* Allow JS to control the width dynamically */
+    min-width: 250px; /* Minimum width for all buttons */
+}
+
+.contact-btn i {
+    margin-right: 10px; /* Space between the icon and text */
+    font-size: 1.5em;
 }
 
 .contact-btn:hover {
     background-color: #0288a3;
-    transform: translateY(-5px); /* Lift the section */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Add shadow effect */
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.contact-btn i {
-    margin-right: 10px;
-    font-size: 1.5em; /* Icon size */
-}
-
-/* Responsive design for mobiles*/
+/* Responsive design for mobiles */
 @media screen and (max-width: 768px) {
     #contact h2 {
         font-size: 1.8em;
     }
 
     .contact-btn {
-        width: 200px;
         font-size: 1.1em;
+        padding-left: 10px;
+        width: auto; /* Let JS control the width dynamically */
+        min-width: 180px; /* Minimum width for mobile */
+        max-width: 100%; /* Prevent overflow in smaller screens */
     }
 }

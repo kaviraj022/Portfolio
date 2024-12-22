@@ -12,7 +12,7 @@
 
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensures 3 skills per row */
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row on larger screens */
     gap: 20px;
     margin-top: 20px;
 }
@@ -26,12 +26,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 300px; /* Fixed height */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* Prevent text overflow */
 }
 
-.skillInfo{
+.skill-item p {
     text-align: justify;
 }
 
@@ -50,12 +48,7 @@
     font-size: 1.1em;
     margin-bottom: 15px;
     color: #555;
-    flex-grow: 1; /* Ensures the text area grows to take available space */
-    overflow: hidden; /* Prevent text overflow */
-    text-overflow: ellipsis; /* Optionally add an ellipsis(...) if the text is too long */
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* Limit to 4 lines of text */
-    -webkit-box-orient: vertical;
+    flex-grow: 1;
 }
 
 .skill-level {
@@ -65,7 +58,7 @@
     margin-bottom: 10px;
 }
 
-.view-cert-button {
+.view-cert-link {
     background-color: #00bcd4; 
     color: #fff;
     border: none;
@@ -73,28 +66,41 @@
     padding: 8px 12px;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
-.view-cert-button:hover {
-    background-color: #019ab3; /* Slightly darker shade on hover */
-    transform: translateY(-5px); /* Lift the section */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Add shadow effect */
+.view-cert-link:hover {
+    background-color: #019ab3;
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive design for mobiles*/
+/* Responsive design for smaller screens, including landscape mode */
 @media screen and (max-width: 768px) {
     .skills-list {
-        grid-template-columns: repeat(1, 1fr); /* Set skills in single column on small screens */
+        grid-template-columns: 1fr; /* Enforce single column layout */
+        gap: 15px;
     }
 
     .skill-item {
-        width: 90%;
-        height: auto; 
+        width: 100%; /* Full width in single column */
     }
 
     #skills h2 {
         font-size: 1.8em;
+    }
+}
+
+/* Additional fix for mobile landscape orientation */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .skills-list {
+        grid-template-columns: 1fr; /* Single column even in landscape */
+    }
+
+    .skill-item {
+        width: 100%;
     }
 }

@@ -38,18 +38,13 @@
     text-align: center;
 }
 
-.internship ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 15px;
-}
-
-.internship ul li {
+.internship p {
     font-size: 1.2em;
     color: #555;
-    margin-bottom: 5px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align:justify;
 }
-
 .view-details-btn {
     display: inline-block;
     background-color: #00bcd4;
@@ -88,7 +83,7 @@
         font-size: 1.4em;
     }
 
-    .internship ul li {
+    .internship p {
         font-size: 1em;
     }
 
