@@ -11,7 +11,7 @@
 
 #home p {
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* Profile Image */
@@ -25,8 +25,6 @@
 
 /* About Content Styles */
 #about-content {
-    font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #333;
     margin-top: 20px;
@@ -35,107 +33,6 @@
     margin-left: auto;
     margin-right: auto;
     text-align: justify; 
-}
-
-#about-content p {
-    margin-bottom: 15px;
-}
-
-#about-content a {
-    color: #00bcd4;
-    text-decoration: none;
-}
-
-#about-content a:hover {
-    text-decoration: underline;
-}
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    background-color: #f0f0f0;;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-right: 25px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Hover Effect */
-header nav ul li a:hover {
-    color: #00bcd4;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    margin-top: auto;
-}
-
-/* Container for content sections */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center the sections vertically because it is not done in global css */
-    align-items: center;     /* Center the sections horizontally because it is not done in global css */
-    flex-grow: 1;
-}
-
-h1, h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #00bcd4;
-}
-
-a:hover {
-    color: #333;
 }
 
 /* Responsive design for mobiles*/
@@ -149,10 +46,6 @@ a:hover {
         display: block;
         margin-right: 0;
         margin-bottom: 10px;
-    }
-
-    .container {
-        width: 90%;
     }
 
     h1, h2 {
