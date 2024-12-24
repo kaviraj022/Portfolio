@@ -1,6 +1,5 @@
-/* Contact Page Styles */
 #contact {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 50px 0;
     text-align: center;
 }
@@ -39,7 +38,7 @@
     padding-left: 20px; /* Add some left padding for better alignment */
     box-sizing: border-box; /* Ensures padding does not affect width */
     width: auto; /* Allow JS to control the width dynamically */
-    min-width: 250px; /* Minimum width for all buttons */
+    min-width: 180px; /* Minimum width for all buttons */
 }
 
 .contact-btn i {
