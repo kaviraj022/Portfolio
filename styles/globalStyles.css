@@ -99,17 +99,22 @@ a:hover {
 /* Move to Top Button Styles */
 #moveToTopBtn {
     position: fixed;
-    bottom: 20px;
+    bottom: 7px;
     right: 20px;
     background-color: #00bcd4;
     color: white;
     border: none;
-    padding: 15px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
-    display: none; /* Hidden by default */
+    display: none;
     transition: background-color 0.3s ease;
+    /* Flexbox centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #moveToTopBtn:hover {
