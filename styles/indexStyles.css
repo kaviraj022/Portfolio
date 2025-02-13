@@ -1,17 +1,15 @@
 #home {
     background-color: #f4f4f4;
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
 }
 
 #home h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
 }
 
 #home p {
     font-size: 1.2em;
-    margin-bottom: 20px;
 }
 
 /* Profile Image */
@@ -28,26 +26,11 @@
     line-height: 1.6;
     color: #333;
     margin-top: 20px;
-    padding: 0 20px;
-    width: 90%; /* Adjust the width to occupy more space */
-    margin-left: auto;
-    margin-right: auto;
     text-align: justify; 
 }
 
 /* Responsive design for mobiles*/
 @media screen and (max-width: 768px) {
-    header nav ul {
-        text-align: left;
-        padding-left: 20px;
-    }
-
-    header nav ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
     h1, h2 {
         font-size: 1.5em;
     }
