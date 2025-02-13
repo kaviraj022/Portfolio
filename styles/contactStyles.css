@@ -55,11 +55,13 @@
 }
 
 /* Responsive design for mobiles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 499px) {
     #contact h2 {
         font-size: 1.8em;
     }
-
+    .buttonContents{
+        min-width: 90px;
+    }
     .contact-btn {
         font-size: 1.2em;
         width: auto; /* Let JS control the width dynamically */
