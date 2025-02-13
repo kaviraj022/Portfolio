@@ -59,17 +59,21 @@
 }
 
 .view-cert-link {
-    background-color: #00bcd4; 
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    font-size: 1em;
-    cursor: pointer;
-    text-decoration: none; /* Remove underline */
     display: inline-block;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    background-color: #00bcd4; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for button size */
+    font-size: 1em; 
+    border-radius: 5px; 
+    text-align: center; /* Center text within the button */
+    text-decoration: none; /* Remove underline from link */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    margin: 20px auto 0; /* Center horizontally with space above */
+    display: block; /* Ensure the button is block-level to use margin auto */
+    width: fit-content; /* Adjust width to fit content */
 }
 
 .view-cert-link:hover {
@@ -89,18 +93,9 @@
         width: 100%; /* Full width in single column */
     }
 
-    #skills h2 {
-        font-size: 1.8em;
-    }
-}
-
-/* Additional fix for mobile landscape orientation */
-@media screen and (orientation: landscape) and (max-height: 500px) {
-    .skills-list {
-        grid-template-columns: 1fr; /* Single column even in landscape */
+    .view-cert-link {
+        white-space: nowrap; /* Prevent text from wrapping it takes 2 lines in mobile view*/
+        
     }
 
-    .skill-item {
-        width: 100%;
-    }
 }

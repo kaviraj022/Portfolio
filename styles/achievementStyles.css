@@ -101,7 +101,6 @@
     }
 
     .view-certificate-btn {
-        font-size: 0.9em;
-        padding: 8px 15px;
+        white-space: nowrap; /* Prevent text from wrapping it takes 2 lines in mobile view*/
     }
 }

@@ -92,6 +92,10 @@
         width: 90%;
     }
 
+    .view-certificate-btn{
+        white-space: nowrap; /* Prevent text from wrapping it takes 2 lines in mobile view*/
+    }
+
     .organization {
         padding: 15px;
     }

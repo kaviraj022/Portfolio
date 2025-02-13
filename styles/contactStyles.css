@@ -23,27 +23,28 @@
     gap: 15px;
 }
 
-.contact-btn {
+.contact-btn{
     background-color: #00bcd4;
-    color: white;
-    padding: 12px 25px;
+    color: white; 
+    padding: 10px 25px;  
     font-size: 1.2em;
     text-decoration: none;
-    border-radius: 5px;
-    text-align: left;
+    border-radius: 30px;
+    display: flex;
+    justify-content:center;
+    transition: background-color 0.3s ease; alignment */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.buttonContents {
+    min-width: 105px; /* Minimum width for all buttons */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    transition: background-color 0.3s ease;
-    padding-left: 20px; /* Add some left padding for better alignment */
-    box-sizing: border-box; /* Ensures padding does not affect width */
-    width: auto; /* Allow JS to control the width dynamically */
-    min-width: 180px; /* Minimum width for all buttons */
 }
 
-.contact-btn i {
+.buttonContents i {
     margin-right: 10px; /* Space between the icon and text */
-    font-size: 1.5em;
 }
 
 .contact-btn:hover {
@@ -59,10 +60,9 @@
     }
 
     .contact-btn {
-        font-size: 1.1em;
-        padding-left: 10px;
+        font-size: 1.2em;
         width: auto; /* Let JS control the width dynamically */
-        min-width: 180px; /* Minimum width for mobile */
+        min-width: 150px; /* Minimum width for mobile */
         max-width: 100%; /* Prevent overflow in smaller screens */
     }
 }
