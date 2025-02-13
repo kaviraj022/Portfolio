@@ -84,7 +84,10 @@
 @media screen and (max-width: 768px) {
     .skills-list {
         grid-template-columns: 1fr; /* Enforce single column layout */
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
     }
 
     .skill-item {
