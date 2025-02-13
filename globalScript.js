@@ -6,8 +6,8 @@ moveToTopBtn.innerHTML = "↑"; // Button text
 
 // Add the button to the body
 document.body.appendChild(moveToTopBtn);
-
-// Show the button when the user scrolls down 200px
+moveToTopBtn.style.display = "none";
+// Show the button when the user scrolls down 100px
 window.onscroll = function() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         moveToTopBtn.style.display = "block";
