@@ -77,14 +77,24 @@ a:hover {
 /* Responsive design for mobiles*/
 @media screen and (max-width: 768px) {
     header nav ul {
-        text-align: left;
-        padding-left: 20px;
+        display: flex;
+        flex-wrap: nowrap; /* Prevents wrapping */
+        overflow-x: auto; /* Enables horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Smooth scrolling effect */
+        white-space: nowrap; /* Ensures items stay in one line */
+        padding: 0px 10px 0px 10px;
+        gap: 20px;
+    }
+
+    header nav ul::-webkit-scrollbar {
+        display: none; /* Hides scrollbar for a cleaner look */
     }
 
     header nav ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
+        display: inline-block;
+        margin-right: 10px;
+
+        flex: 0 0 auto; /* Prevents shrinking */
     }
 
     .container {
